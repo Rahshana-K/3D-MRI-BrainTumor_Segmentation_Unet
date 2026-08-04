@@ -1,4 +1,4 @@
-# 🧠 Brain Tumor Segmentation using U-Net on BraTS MRI Dataset
+# 🧠 Brain Tumor Segmentation using U-Net (BraTS MRI Dataset)
 
 Deep Learning based semantic segmentation of brain tumors from multi-modal MRI scans using a U-Net architecture.
 
@@ -16,25 +16,17 @@ The model learns pixel-wise classification of MRI slices into multiple tumor reg
 
 ## Features
 
-✔ MRI preprocessing
+ - MRI preprocessing
+ - Multi-modal MRI visualization
+ - Brain Tumor Segmentation
+ - U-Net implementation from scratch
+ - Dice Loss
+ - Mean IoU Metric
+ - Data Generator for large datasets
+ - Model Training
+ - Model Evaluation
+ - Visualization of predictions
 
-✔ Multi-modal MRI visualization
-
-✔ Brain Tumor Segmentation
-
-✔ U-Net implementation from scratch
-
-✔ Dice Loss
-
-✔ Mean IoU Metric
-
-✔ Data Generator for large datasets
-
-✔ Model Training
-
-✔ Model Evaluation
-
-✔ Visualization of predictions
 
 ---
 
@@ -64,54 +56,14 @@ Each MRI scan is stored in **NIfTI (.nii.gz)** format.
 
 # Sample MRI Images
 
-<p align="center">
-<img src="images/sample_slice.png" width="700">
-</p>
+<img width="1156" height="239" alt="image" src="https://github.com/user-attachments/assets/ec0c4861-84da-4cf4-9e3e-093830fdd99d" />
 
 ---
 
-# Tumor Segmentation Labels
-
-<p align="center">
-<img src="images/segmentation_labels.png" width="700">
-</p>
+# Tumor Segmentations
+<img width="1688" height="2188" alt="image" src="https://github.com/user-attachments/assets/cca95409-b5f5-4faa-9597-2777e096817d" />
 
 ---
-
-# Data Pipeline
-
-MRI Scan (.nii.gz)
-
-↓
-
-Read NIfTI files
-
-↓
-
-Normalize Images
-
-↓
-
-Create Masks
-
-↓
-
-Resize
-
-↓
-
-Data Generator
-
-↓
-
-U-Net
-
-↓
-
-Prediction
-
----
-
 # Model Architecture
 
 This project implements a U-Net architecture consisting of:
@@ -134,19 +86,14 @@ Final Layer
 - Softmax activation
 - Multi-class segmentation
 
-<p align="center">
-<img src="images/unet_architecture.png" width="700">
-</p>
+<img width="1555" height="1036" alt="image" src="https://github.com/user-attachments/assets/3ae064ce-0ba3-4a91-b72a-79647aa0da9c" />
 
 ---
 
-# Loss Function
+# Data Pipeline
 
-Dice Loss
+<img width="1376" height="307" alt="image" src="https://github.com/user-attachments/assets/beb33a9f-8ec1-481d-b08d-3389649a14ee" />
 
-Dice coefficient measures overlap between prediction and ground truth.
-
-It is particularly effective for medical image segmentation because of class imbalance.
 
 ---
 
@@ -162,19 +109,6 @@ The model is evaluated using:
 
 ---
 
-# Training
-
-The notebook uses:
-
-- TensorFlow
-- Keras
-- Custom Data Generator
-- Model Checkpoint
-- Early Stopping
-- ReduceLROnPlateau
-
----
-
 # Results
 
 The pretrained model achieved approximately:
@@ -185,23 +119,13 @@ The pretrained model achieved approximately:
 | Dice Score | **65.5%** |
 | Accuracy | ~81% |
 
-> Values are obtained from the pretrained model included in the notebook.
-
 ---
 
 # Training Curves
 
-## Accuracy
+## Accuracy & Loss
 
-<p align="center">
-<img src="images/training_accuracy.png" width="700">
-</p>
-
-## Loss
-
-<p align="center">
-<img src="images/training_loss.png" width="700">
-</p>
+<img width="942" height="466" alt="image" src="https://github.com/user-attachments/assets/7c2cc215-2085-4c25-9d4e-041a5aa65869" />
 
 ---
 
