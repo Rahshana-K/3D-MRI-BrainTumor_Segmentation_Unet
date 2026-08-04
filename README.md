@@ -150,7 +150,7 @@ The pretrained model achieved approximately:
 ### Example 3
 
 <p align="center">
-<img src="images/prediction3.png" width="750">
+<img src="images/prediction5.png" width="750">
 </p>
 
 ---
@@ -158,7 +158,7 @@ The pretrained model achieved approximately:
 # 3D Visualization
 
 <p align="center">
-<img src="images/gif.gif" width="500">
+<img src="images/tenor.gif" width="500">
 </p>
 
 ---
@@ -176,32 +176,6 @@ The pretrained model achieved approximately:
 
 ---
 
-# Installation
-
-```bash
-git clone https://github.com/yourusername/Brain-Tumor-Segmentation-U-Net.git
-
-cd Brain-Tumor-Segmentation-U-Net
-
-pip install -r requirements.txt
-```
-
----
-
-# Run
-
-```bash
-jupyter notebook
-```
-
-Open
-
-```
-3d-mri-brain-tumor-segmentation-u-net.ipynb
-```
-
----
-
 # Repository Structure
 
 ```
@@ -211,7 +185,6 @@ Brain-Tumor-Segmentation-U-Net
 ├── requirements.txt
 ├── notebook.ipynb
 ├── images/
-├── results/
 ```
 
 ---
