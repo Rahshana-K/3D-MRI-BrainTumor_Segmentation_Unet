@@ -2,6 +2,8 @@
 
 Deep Learning based semantic segmentation of brain tumors from multi-modal MRI scans using a U-Net architecture.
 
+<img width="3002" height="1104" alt="image" src="https://github.com/user-attachments/assets/10ff1d02-9607-49e2-bd53-0486e6d92fa4" />
+
 ---
 
 ## Project Overview
